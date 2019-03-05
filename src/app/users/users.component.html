@@ -2,7 +2,7 @@
 
 <ul>
   <li *ngFor="let user of users$">
-    <a routerLink="/details/{{user.id}}">{{ user.name }}</a>
+    <a routerLink="/users/details/{{user.id}}">{{ user.name }}</a>
 
     <ul>
       <li>{{ user.email }}</li>
@@ -14,10 +14,12 @@
 
 
 
-<h1>{{ user$.name }}</h1>
+<h1>{{ user$?.name }}</h1>
 
 <ul *ngIf="user$">
   <li><strong>Username:</strong> {{ user$.username }}</li>
   <li><strong>Email:</strong> {{ user$.email }}</li>
   <li><strong>Phone:</strong> {{ user$.phone }}</li>
 </ul>
+
+<app-details></app-details>

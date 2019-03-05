@@ -7,12 +7,12 @@ import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'users',
     component:UsersComponent
   },
   {
-    path:'details/:id',
-    component:DetailsComponent
+    path:'users/details/:id',
+    component:UsersComponent
   },
   {
     path:'posts',
